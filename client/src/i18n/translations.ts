@@ -100,6 +100,22 @@ export const translations = {
     upgradeToPremiumNow: "Upgrade to Premium Now",
     cancelAnytime: "Cancel anytime • No commitment required",
     
+    // Widget Dialog ✅ new
+    next: "Next",
+    back: "Back",
+    createWidget: "Create Widget",
+    selectWidgetType: "Select Widget Type",
+    configureWidget: "Configure Widget",
+    widgetTitle: "Widget Title",
+    filterByPriority: "Filter by Priority",
+    filterByCategory: "Filter by Category",
+    filterByStatus: "Filter by Status",
+    maxTasksToShow: "Max Tasks to Show",
+    selectTask: "Select Task",
+    noTasksWithDates: "No tasks with dates found",
+    chartType: "Chart Type",
+    categoryDistribution: "Category Distribution",
+
     // Analytics
     analyticsTitle: "Analytics Dashboard",
     analyticsSubtitle: "Track your productivity and task completion metrics",
@@ -258,6 +274,22 @@ export const translations = {
     unlimitedTasks: "Tareas y categorías ilimitadas",
     upgradeToPremiumNow: "Actualizar a Premium Ahora",
     cancelAnytime: "Cancele en cualquier momento • Sin compromiso",
+
+    // Widget Dialog ✅ new
+    next: "Siguiente",
+    back: "Atrás",
+    createWidget: "Crear Widget",
+    selectWidgetType: "Seleccionar tipo de widget",
+    configureWidget: "Configurar Widget",
+    widgetTitle: "Título del Widget",
+    filterByPriority: "Filtrar por Prioridad",
+    filterByCategory: "Filtrar por Categoría",
+    filterByStatus: "Filtrar por Estado",
+    maxTasksToShow: "Máximo de tareas a mostrar",
+    selectTask: "Seleccionar Tarea",
+    noTasksWithDates: "No hay tareas con fechas",
+    chartType: "Tipo de Gráfico",
+    categoryDistribution: "Distribución por Categoría",
     
     // Analytics
     analyticsTitle: "Panel de Analíticas",
@@ -417,6 +449,22 @@ export const translations = {
     unlimitedTasks: "Tâches et catégories illimitées",
     upgradeToPremiumNow: "Passer à Premium Maintenant",
     cancelAnytime: "Annulez à tout moment • Aucun engagement requis",
+
+    // Widget Dialog ✅ new
+    next: "Suivant",
+    back: "Retour",
+    createWidget: "Créer un Widget",
+    selectWidgetType: "Sélectionner le type de widget",
+    configureWidget: "Configurer le Widget",
+    widgetTitle: "Titre du Widget",
+    filterByPriority: "Filtrer par Priorité",
+    filterByCategory: "Filtrer par Catégorie",
+    filterByStatus: "Filtrer par Statut",
+    maxTasksToShow: "Nombre maximum de tâches",
+    selectTask: "Sélectionner une Tâche",
+    noTasksWithDates: "Aucune tâche avec des dates",
+    chartType: "Type de Graphique",
+    categoryDistribution: "Distribution par Catégorie",
     
     // Analytics
     analyticsTitle: "Tableau de Bord Analytique",
@@ -576,6 +624,22 @@ export const translations = {
     unlimitedTasks: "Unbegrenzte Aufgaben und Kategorien",
     upgradeToPremiumNow: "Jetzt auf Premium Upgraden",
     cancelAnytime: "Jederzeit kündbar • Keine Verpflichtung erforderlich",
+
+    // Widget Dialog ✅ new
+    next: "Weiter",
+    back: "Zurück",
+    createWidget: "Widget Erstellen",
+    selectWidgetType: "Widget-Typ auswählen",
+    configureWidget: "Widget Konfigurieren",
+    widgetTitle: "Widget-Titel",
+    filterByPriority: "Nach Priorität filtern",
+    filterByCategory: "Nach Kategorie filtern",
+    filterByStatus: "Nach Status filtern",
+    maxTasksToShow: "Maximale Aufgaben anzeigen",
+    selectTask: "Aufgabe Auswählen",
+    noTasksWithDates: "Keine Aufgaben mit Daten",
+    chartType: "Diagrammtyp",
+    categoryDistribution: "Kategorieverteilung",
     
     // Analytics
     analyticsTitle: "Analyse-Dashboard",
@@ -735,6 +799,22 @@ export const translations = {
     unlimitedTasks: "无限任务和类别",
     upgradeToPremiumNow: "立即升级到高级版",
     cancelAnytime: "随时取消 • 无需承诺",
+
+    // Widget Dialog ✅ new
+    next: "下一步",
+    back: "返回",
+    createWidget: "创建小部件",
+    selectWidgetType: "选择小部件类型",
+    configureWidget: "配置小部件",
+    widgetTitle: "小部件标题",
+    filterByPriority: "按优先级筛选",
+    filterByCategory: "按类别筛选",
+    filterByStatus: "按状态筛选",
+    maxTasksToShow: "最多显示任务数",
+    selectTask: "选择任务",
+    noTasksWithDates: "没有带日期的任务",
+    chartType: "图表类型",
+    categoryDistribution: "类别分布",
     
     // Analytics
     analyticsTitle: "分析仪表板",
@@ -762,7 +842,7 @@ export const translations = {
     upcomingDeadlines: "即将到来的截止日期",
     upcomingDeadlinesDescription: "未来7天内到期的任务",
     noUpcomingDeadlines: "没有即将到来的截止日期",
-    noTasksAvailable: "没有可��的任务",
+    noTasksAvailable: "没有可用的任务",
     
     // Timer
     timeSpent: "花费时间",

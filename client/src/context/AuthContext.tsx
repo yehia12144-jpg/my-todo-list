@@ -34,7 +34,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (!tokens?.access) return;
     authService.getProfile(tokens.access)
       .then((b) => {
-        const updated = normalizeUser(b, user);
+        // ✅ FIX 1: load saved user from localStorage first so isPremium is preserved
+        const saved = session.loadUser();
+        // ✅ FIX 2: also check the standalone isPremium key that survives logout
+        const storedPremium = JSON.parse(localStorage.getItem("isPremium") ?? "false");
+        const merged = saved ? { ...saved, isPremium: saved.isPremium || storedPremium } : null;
+        const updated = normalizeUser(b, merged ?? user);
         setUser(updated);
         session.save(updated, tokens);
       })
@@ -58,7 +63,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   async function logout() {
     try { if (tokens) await authService.logout(tokens.refresh, tokens.access); } finally {
+      // ✅ FIX 2: preserve isPremium before clearing the session
+      const isPremium = user?.isPremium ?? false;
       setUser(null); setTokens(null); session.clear();
+      localStorage.setItem("isPremium", JSON.stringify(isPremium));
       toast.success("Logged out successfully");
     }
   }
@@ -69,6 +77,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const updated: User = { ...normalizeUser(b, user), isPremium: patch.isPremium ?? user.isPremium, language: patch.language ?? user.language };
     setUser(updated);
     session.save(updated, tokens);
+    // ✅ Keep the standalone key in sync too
+    localStorage.setItem("isPremium", JSON.stringify(updated.isPremium));
   }
 
   async function changePassword(oldPw: string, newPw: string) {
