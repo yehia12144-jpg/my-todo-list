@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { ThemeProvider } from "next-themes";
+import {ThemeProvider} from "./context/ThemeContext";
 import { Toaster } from "./components/ui/sonner";
 
 import { LanguageProvider } from "./context/LanguageContext";
@@ -13,7 +13,7 @@ import DashboardPage from "./pages/DashboardPage";
 export default function App() {
   return (
     <BrowserRouter>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <ThemeProvider>
         <AuthProvider>
           <LanguageProvider>
             <TaskProvider>
