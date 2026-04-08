@@ -5,7 +5,6 @@ import { Toaster } from "./components/ui/sonner";
 import { LanguageProvider } from "./context/LanguageContext";
 import { AuthProvider } from "./context/AuthContext";
 import { TaskProvider } from "./context/TaskContext";
-import { WidgetProvider } from "./context/WidgetContext";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 
 import AuthPage from "./pages/AuthPage";
@@ -18,7 +17,6 @@ export default function App() {
         <AuthProvider>
           <LanguageProvider>
             <TaskProvider>
-              <WidgetProvider>
                 <Routes>
                   {/* Public */}
                   <Route path="/login" element={<AuthPage />} />
@@ -33,7 +31,6 @@ export default function App() {
                 </Routes>
 
                 <Toaster />
-              </WidgetProvider>
             </TaskProvider>
           </LanguageProvider>
         </AuthProvider>
