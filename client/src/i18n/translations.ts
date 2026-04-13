@@ -1,19 +1,14 @@
-export type Language = "en" | "es" | "fr" | "de" | "zh";
+export type Language = "en" | "es" | "fr" | "de" | "zh" | "ar";
 
 export const translations = {
   en: {
-    // App Name
     appName: "TaskFlow",
-    
-    // Header
     welcome: "Welcome",
     tasks: "Tasks",
     analytics: "Analytics",
     widgets: "Widgets",
     upgrade: "Upgrade",
     logout: "Logout",
-    
-    // Tasks View
     searchPlaceholder: "Search tasks by keyword...",
     allPriorities: "All Priorities",
     allCategories: "All Categories",
@@ -21,8 +16,6 @@ export const translations = {
     allTasks: "All Tasks",
     active: "Active",
     completed: "Completed",
-    
-    // Task Properties
     high: "High",
     medium: "Medium",
     low: "Low",
@@ -32,14 +25,10 @@ export const translations = {
     startDate: "Start Date",
     estimatedTime: "Estimated Time",
     minutes: "minutes",
-    
-    // Task Actions
     edit: "Edit",
     delete: "Delete",
     markComplete: "Mark as Complete",
     markIncomplete: "Mark as Incomplete",
-    
-    // Add Task Dialog
     addTaskTitle: "Add New Task",
     addTaskDescription: "Create a new task with all the details.",
     taskTitle: "Task Title",
@@ -55,13 +44,9 @@ export const translations = {
     estimatedTimePlaceholder: "Estimated time in minutes",
     cancel: "Cancel",
     create: "Create Task",
-    
-    // Edit Task Dialog
     editTaskTitle: "Edit Task",
     editTaskDescription: "Update your task details.",
     save: "Save Changes",
-    
-    // Profile Dialog
     manageAccount: "Manage Account",
     manageAccountDescription: "Update your personal information and subscription.",
     premiumAccount: "Premium Account",
@@ -79,8 +64,6 @@ export const translations = {
     close: "Close",
     language: "Language",
     selectLanguage: "Select Language",
-    
-    // Premium Features
     unlockPremium: "Unlock Premium Features",
     premiumDescription: "Get access to advanced analytics, customizable widgets, and an ad-free experience.",
     analyticsDashboard: "Analytics Dashboard",
@@ -99,8 +82,6 @@ export const translations = {
     unlimitedTasks: "Unlimited tasks and categories",
     upgradeToPremiumNow: "Upgrade to Premium Now",
     cancelAnytime: "Cancel anytime • No commitment required",
-    
-    // Widget Dialog ✅ new
     next: "Next",
     back: "Back",
     createWidget: "Create Widget",
@@ -115,8 +96,6 @@ export const translations = {
     noTasksWithDates: "No tasks with dates found",
     chartType: "Chart Type",
     categoryDistribution: "Category Distribution",
-
-    // Analytics
     analyticsTitle: "Analytics Dashboard",
     analyticsSubtitle: "Track your productivity and task completion metrics",
     totalTasks: "Total Tasks",
@@ -143,14 +122,10 @@ export const translations = {
     upcomingDeadlinesDescription: "Tasks due in the next 7 days",
     noUpcomingDeadlines: "No upcoming deadlines",
     noTasksAvailable: "No tasks available",
-    
-    // Timer
     timeSpent: "Time Spent",
     start: "Start",
     pause: "Pause",
     reset: "Reset",
-    
-    // Toast Messages
     taskAdded: "Task added successfully",
     taskUpdated: "Task updated successfully",
     taskDeleted: "Task deleted successfully",
@@ -165,8 +140,6 @@ export const translations = {
     loggedOut: "Logged out successfully",
     upgradedToPremium: "Upgraded to Premium!",
     premiumDeactivated: "Premium deactivated",
-    
-    // Auth
     loginTitle: "Welcome Back",
     loginSubtitle: "Sign in to your account to continue",
     registerTitle: "Create Account",
@@ -177,18 +150,13 @@ export const translations = {
     alreadyHaveAccount: "Already have an account?",
   },
   es: {
-    // App Name
     appName: "TaskFlow",
-    
-    // Header
     welcome: "Bienvenido",
     tasks: "Tareas",
     analytics: "Analíticas",
     widgets: "Widgets",
     upgrade: "Actualizar",
     logout: "Cerrar sesión",
-    
-    // Tasks View
     searchPlaceholder: "Buscar tareas por palabra clave...",
     allPriorities: "Todas las Prioridades",
     allCategories: "Todas las Categorías",
@@ -196,8 +164,6 @@ export const translations = {
     allTasks: "Todas las Tareas",
     active: "Activas",
     completed: "Completadas",
-    
-    // Task Properties
     high: "Alta",
     medium: "Media",
     low: "Baja",
@@ -207,14 +173,10 @@ export const translations = {
     startDate: "Fecha de Inicio",
     estimatedTime: "Tiempo Estimado",
     minutes: "minutos",
-    
-    // Task Actions
     edit: "Editar",
     delete: "Eliminar",
     markComplete: "Marcar como Completada",
     markIncomplete: "Marcar como Incompleta",
-    
-    // Add Task Dialog
     addTaskTitle: "Agregar Nueva Tarea",
     addTaskDescription: "Crear una nueva tarea con todos los detalles.",
     taskTitle: "Título de la Tarea",
@@ -230,13 +192,9 @@ export const translations = {
     estimatedTimePlaceholder: "Tiempo estimado en minutos",
     cancel: "Cancelar",
     create: "Crear Tarea",
-    
-    // Edit Task Dialog
     editTaskTitle: "Editar Tarea",
     editTaskDescription: "Actualice los detalles de su tarea.",
     save: "Guardar Cambios",
-    
-    // Profile Dialog
     manageAccount: "Gestionar Cuenta",
     manageAccountDescription: "Actualice su información personal y suscripción.",
     premiumAccount: "Cuenta Premium",
@@ -254,8 +212,6 @@ export const translations = {
     close: "Cerrar",
     language: "Idioma",
     selectLanguage: "Seleccionar Idioma",
-    
-    // Premium Features
     unlockPremium: "Desbloquear Funciones Premium",
     premiumDescription: "Obtenga acceso a analíticas avanzadas, widgets personalizables y una experiencia sin anuncios.",
     analyticsDashboard: "Panel de Analíticas",
@@ -274,8 +230,6 @@ export const translations = {
     unlimitedTasks: "Tareas y categorías ilimitadas",
     upgradeToPremiumNow: "Actualizar a Premium Ahora",
     cancelAnytime: "Cancele en cualquier momento • Sin compromiso",
-
-    // Widget Dialog ✅ new
     next: "Siguiente",
     back: "Atrás",
     createWidget: "Crear Widget",
@@ -290,8 +244,6 @@ export const translations = {
     noTasksWithDates: "No hay tareas con fechas",
     chartType: "Tipo de Gráfico",
     categoryDistribution: "Distribución por Categoría",
-    
-    // Analytics
     analyticsTitle: "Panel de Analíticas",
     analyticsSubtitle: "Rastree su productividad y métricas de finalización de tareas",
     totalTasks: "Total de Tareas",
@@ -318,14 +270,10 @@ export const translations = {
     upcomingDeadlinesDescription: "Tareas que vencen en los próximos 7 días",
     noUpcomingDeadlines: "No hay próximos plazos",
     noTasksAvailable: "No hay tareas disponibles",
-    
-    // Timer
     timeSpent: "Tiempo Empleado",
     start: "Iniciar",
     pause: "Pausar",
     reset: "Reiniciar",
-    
-    // Toast Messages
     taskAdded: "Tarea agregada exitosamente",
     taskUpdated: "Tarea actualizada exitosamente",
     taskDeleted: "Tarea eliminada exitosamente",
@@ -340,8 +288,6 @@ export const translations = {
     loggedOut: "Sesión cerrada exitosamente",
     upgradedToPremium: "¡Actualizado a Premium!",
     premiumDeactivated: "Premium desactivado",
-    
-    // Auth
     loginTitle: "Bienvenido de Nuevo",
     loginSubtitle: "Inicie sesión en su cuenta para continuar",
     registerTitle: "Crear Cuenta",
@@ -352,18 +298,13 @@ export const translations = {
     alreadyHaveAccount: "¿Ya tiene una cuenta?",
   },
   fr: {
-    // App Name
     appName: "TaskFlow",
-    
-    // Header
     welcome: "Bienvenue",
     tasks: "Tâches",
     analytics: "Analytique",
     widgets: "Widgets",
     upgrade: "Mettre à niveau",
     logout: "Déconnexion",
-    
-    // Tasks View
     searchPlaceholder: "Rechercher des tâches par mot-clé...",
     allPriorities: "Toutes les Priorités",
     allCategories: "Toutes les Catégories",
@@ -371,8 +312,6 @@ export const translations = {
     allTasks: "Toutes les Tâches",
     active: "Actives",
     completed: "Terminées",
-    
-    // Task Properties
     high: "Haute",
     medium: "Moyenne",
     low: "Basse",
@@ -382,14 +321,10 @@ export const translations = {
     startDate: "Date de Début",
     estimatedTime: "Temps Estimé",
     minutes: "minutes",
-    
-    // Task Actions
     edit: "Modifier",
     delete: "Supprimer",
     markComplete: "Marquer comme Terminée",
     markIncomplete: "Marquer comme Incomplète",
-    
-    // Add Task Dialog
     addTaskTitle: "Ajouter une Nouvelle Tâche",
     addTaskDescription: "Créer une nouvelle tâche avec tous les détails.",
     taskTitle: "Titre de la Tâche",
@@ -405,13 +340,9 @@ export const translations = {
     estimatedTimePlaceholder: "Temps estimé en minutes",
     cancel: "Annuler",
     create: "Créer la Tâche",
-    
-    // Edit Task Dialog
     editTaskTitle: "Modifier la Tâche",
     editTaskDescription: "Mettre à jour les détails de votre tâche.",
     save: "Enregistrer les Modifications",
-    
-    // Profile Dialog
     manageAccount: "Gérer le Compte",
     manageAccountDescription: "Mettez à jour vos informations personnelles et votre abonnement.",
     premiumAccount: "Compte Premium",
@@ -429,8 +360,6 @@ export const translations = {
     close: "Fermer",
     language: "Langue",
     selectLanguage: "Sélectionner la Langue",
-    
-    // Premium Features
     unlockPremium: "Débloquer les Fonctionnalités Premium",
     premiumDescription: "Accédez à des analyses avancées, des widgets personnalisables et une expérience sans publicité.",
     analyticsDashboard: "Tableau de Bord Analytique",
@@ -449,8 +378,6 @@ export const translations = {
     unlimitedTasks: "Tâches et catégories illimitées",
     upgradeToPremiumNow: "Passer à Premium Maintenant",
     cancelAnytime: "Annulez à tout moment • Aucun engagement requis",
-
-    // Widget Dialog ✅ new
     next: "Suivant",
     back: "Retour",
     createWidget: "Créer un Widget",
@@ -465,8 +392,6 @@ export const translations = {
     noTasksWithDates: "Aucune tâche avec des dates",
     chartType: "Type de Graphique",
     categoryDistribution: "Distribution par Catégorie",
-    
-    // Analytics
     analyticsTitle: "Tableau de Bord Analytique",
     analyticsSubtitle: "Suivez votre productivité et vos métriques d'achèvement des tâches",
     totalTasks: "Total des Tâches",
@@ -493,14 +418,10 @@ export const translations = {
     upcomingDeadlinesDescription: "Tâches dues dans les 7 prochains jours",
     noUpcomingDeadlines: "Aucune échéance prochaine",
     noTasksAvailable: "Aucune tâche disponible",
-    
-    // Timer
     timeSpent: "Temps Passé",
     start: "Démarrer",
     pause: "Pause",
     reset: "Réinitialiser",
-    
-    // Toast Messages
     taskAdded: "Tâche ajoutée avec succès",
     taskUpdated: "Tâche mise à jour avec succès",
     taskDeleted: "Tâche supprimée avec succès",
@@ -515,8 +436,6 @@ export const translations = {
     loggedOut: "Déconnecté avec succès",
     upgradedToPremium: "Passé à Premium!",
     premiumDeactivated: "Premium désactivé",
-    
-    // Auth
     loginTitle: "Bon Retour",
     loginSubtitle: "Connectez-vous à votre compte pour continuer",
     registerTitle: "Créer un Compte",
@@ -527,18 +446,13 @@ export const translations = {
     alreadyHaveAccount: "Vous avez déjà un compte?",
   },
   de: {
-    // App Name
     appName: "TaskFlow",
-    
-    // Header
     welcome: "Willkommen",
     tasks: "Aufgaben",
     analytics: "Analysen",
     widgets: "Widgets",
     upgrade: "Upgrade",
     logout: "Abmelden",
-    
-    // Tasks View
     searchPlaceholder: "Aufgaben nach Stichwort suchen...",
     allPriorities: "Alle Prioritäten",
     allCategories: "Alle Kategorien",
@@ -546,8 +460,6 @@ export const translations = {
     allTasks: "Alle Aufgaben",
     active: "Aktiv",
     completed: "Abgeschlossen",
-    
-    // Task Properties
     high: "Hoch",
     medium: "Mittel",
     low: "Niedrig",
@@ -557,14 +469,10 @@ export const translations = {
     startDate: "Startdatum",
     estimatedTime: "Geschätzte Zeit",
     minutes: "Minuten",
-    
-    // Task Actions
     edit: "Bearbeiten",
     delete: "Löschen",
     markComplete: "Als Abgeschlossen Markieren",
     markIncomplete: "Als Unvollständig Markieren",
-    
-    // Add Task Dialog
     addTaskTitle: "Neue Aufgabe Hinzufügen",
     addTaskDescription: "Erstellen Sie eine neue Aufgabe mit allen Details.",
     taskTitle: "Aufgabentitel",
@@ -580,13 +488,9 @@ export const translations = {
     estimatedTimePlaceholder: "Geschätzte Zeit in Minuten",
     cancel: "Abbrechen",
     create: "Aufgabe Erstellen",
-    
-    // Edit Task Dialog
     editTaskTitle: "Aufgabe Bearbeiten",
     editTaskDescription: "Aktualisieren Sie Ihre Aufgabendetails.",
     save: "Änderungen Speichern",
-    
-    // Profile Dialog
     manageAccount: "Konto Verwalten",
     manageAccountDescription: "Aktualisieren Sie Ihre persönlichen Informationen und Ihr Abonnement.",
     premiumAccount: "Premium-Konto",
@@ -604,8 +508,6 @@ export const translations = {
     close: "Schließen",
     language: "Sprache",
     selectLanguage: "Sprache Auswählen",
-    
-    // Premium Features
     unlockPremium: "Premium-Funktionen Freischalten",
     premiumDescription: "Erhalten Sie Zugriff auf erweiterte Analysen, anpassbare Widgets und ein werbefreies Erlebnis.",
     analyticsDashboard: "Analyse-Dashboard",
@@ -624,8 +526,6 @@ export const translations = {
     unlimitedTasks: "Unbegrenzte Aufgaben und Kategorien",
     upgradeToPremiumNow: "Jetzt auf Premium Upgraden",
     cancelAnytime: "Jederzeit kündbar • Keine Verpflichtung erforderlich",
-
-    // Widget Dialog ✅ new
     next: "Weiter",
     back: "Zurück",
     createWidget: "Widget Erstellen",
@@ -640,8 +540,6 @@ export const translations = {
     noTasksWithDates: "Keine Aufgaben mit Daten",
     chartType: "Diagrammtyp",
     categoryDistribution: "Kategorieverteilung",
-    
-    // Analytics
     analyticsTitle: "Analyse-Dashboard",
     analyticsSubtitle: "Verfolgen Sie Ihre Produktivität und Aufgabenabschluss-Metriken",
     totalTasks: "Gesamtaufgaben",
@@ -668,14 +566,10 @@ export const translations = {
     upcomingDeadlinesDescription: "Aufgaben fällig in den nächsten 7 Tagen",
     noUpcomingDeadlines: "Keine bevorstehenden Fristen",
     noTasksAvailable: "Keine Aufgaben verfügbar",
-    
-    // Timer
     timeSpent: "Verbrachte Zeit",
     start: "Start",
     pause: "Pause",
     reset: "Zurücksetzen",
-    
-    // Toast Messages
     taskAdded: "Aufgabe erfolgreich hinzugefügt",
     taskUpdated: "Aufgabe erfolgreich aktualisiert",
     taskDeleted: "Aufgabe erfolgreich gelöscht",
@@ -690,8 +584,6 @@ export const translations = {
     loggedOut: "Erfolgreich abgemeldet",
     upgradedToPremium: "Auf Premium upgegradet!",
     premiumDeactivated: "Premium deaktiviert",
-    
-    // Auth
     loginTitle: "Willkommen Zurück",
     loginSubtitle: "Melden Sie sich bei Ihrem Konto an, um fortzufahren",
     registerTitle: "Konto Erstellen",
@@ -702,18 +594,13 @@ export const translations = {
     alreadyHaveAccount: "Sie haben bereits ein Konto?",
   },
   zh: {
-    // App Name
     appName: "TaskFlow",
-    
-    // Header
     welcome: "欢迎",
     tasks: "任务",
     analytics: "分析",
     widgets: "小部件",
     upgrade: "升级",
     logout: "登出",
-    
-    // Tasks View
     searchPlaceholder: "按关键字搜索任务...",
     allPriorities: "所有优先级",
     allCategories: "所有类别",
@@ -721,8 +608,6 @@ export const translations = {
     allTasks: "所有任务",
     active: "活跃",
     completed: "已完成",
-    
-    // Task Properties
     high: "高",
     medium: "中",
     low: "低",
@@ -732,14 +617,10 @@ export const translations = {
     startDate: "开始日期",
     estimatedTime: "预计时间",
     minutes: "分钟",
-    
-    // Task Actions
     edit: "编辑",
     delete: "删除",
     markComplete: "标记为已完成",
     markIncomplete: "标记为未完成",
-    
-    // Add Task Dialog
     addTaskTitle: "添加新任务",
     addTaskDescription: "创建一个包含所有详细信息的新任务。",
     taskTitle: "任务标题",
@@ -755,13 +636,9 @@ export const translations = {
     estimatedTimePlaceholder: "预计时间（分钟）",
     cancel: "取消",
     create: "创建任务",
-    
-    // Edit Task Dialog
     editTaskTitle: "编辑任务",
     editTaskDescription: "更新您的任务详细信息。",
     save: "保存更改",
-    
-    // Profile Dialog
     manageAccount: "管理账户",
     manageAccountDescription: "更新您的个人信息和订阅。",
     premiumAccount: "高级账户",
@@ -779,8 +656,6 @@ export const translations = {
     close: "关闭",
     language: "语言",
     selectLanguage: "选择语言",
-    
-    // Premium Features
     unlockPremium: "解锁高级功能",
     premiumDescription: "访问高级分析、可自定义小部件和无广告体验。",
     analyticsDashboard: "分析仪表板",
@@ -799,8 +674,6 @@ export const translations = {
     unlimitedTasks: "无限任务和类别",
     upgradeToPremiumNow: "立即升级到高级版",
     cancelAnytime: "随时取消 • 无需承诺",
-
-    // Widget Dialog ✅ new
     next: "下一步",
     back: "返回",
     createWidget: "创建小部件",
@@ -815,8 +688,6 @@ export const translations = {
     noTasksWithDates: "没有带日期的任务",
     chartType: "图表类型",
     categoryDistribution: "类别分布",
-    
-    // Analytics
     analyticsTitle: "分析仪表板",
     analyticsSubtitle: "跟踪您的生产力和任务完成指标",
     totalTasks: "总任务数",
@@ -843,14 +714,10 @@ export const translations = {
     upcomingDeadlinesDescription: "未来7天内到期的任务",
     noUpcomingDeadlines: "没有即将到来的截止日期",
     noTasksAvailable: "没有可用的任务",
-    
-    // Timer
     timeSpent: "花费时间",
     start: "开始",
     pause: "暂停",
     reset: "重置",
-    
-    // Toast Messages
     taskAdded: "任务添加成功",
     taskUpdated: "任务更新成功",
     taskDeleted: "任务删除成功",
@@ -865,8 +732,6 @@ export const translations = {
     loggedOut: "成功登出",
     upgradedToPremium: "升级到高级版！",
     premiumDeactivated: "高级版已停用",
-    
-    // Auth
     loginTitle: "欢迎回来",
     loginSubtitle: "登录您的账户以继续",
     registerTitle: "创建账户",
@@ -876,6 +741,154 @@ export const translations = {
     dontHaveAccount: "还没有账户？",
     alreadyHaveAccount: "已经有账户了？",
   },
+  ar: {
+    appName: "TaskFlow",
+    welcome: "مرحباً",
+    tasks: "المهام",
+    analytics: "التحليلات",
+    widgets: "الأدوات",
+    upgrade: "ترقية",
+    logout: "تسجيل الخروج",
+    searchPlaceholder: "ابحث عن المهام بالكلمة المفتاحية...",
+    allPriorities: "كل الأولويات",
+    allCategories: "كل الفئات",
+    addTask: "إضافة مهمة",
+    allTasks: "كل المهام",
+    active: "نشطة",
+    completed: "مكتملة",
+    high: "عالية",
+    medium: "متوسطة",
+    low: "منخفضة",
+    priority: "الأولوية",
+    category: "الفئة",
+    dueDate: "تاريخ الاستحقاق",
+    startDate: "تاريخ البدء",
+    estimatedTime: "الوقت المقدر",
+    minutes: "دقائق",
+    edit: "تعديل",
+    delete: "حذف",
+    markComplete: "تحديد كمكتملة",
+    markIncomplete: "تحديد كغير مكتملة",
+    addTaskTitle: "إضافة مهمة جديدة",
+    addTaskDescription: "أنشئ مهمة جديدة بكل التفاصيل.",
+    taskTitle: "عنوان المهمة",
+    taskTitlePlaceholder: "أدخل عنوان المهمة...",
+    description: "الوصف",
+    descriptionPlaceholder: "أدخل وصف المهمة...",
+    selectCategory: "اختر الفئة",
+    createCategory: "إنشاء فئة جديدة",
+    newCategoryPlaceholder: "أدخل اسم الفئة الجديدة...",
+    selectPriority: "اختر الأولوية",
+    selectStartDate: "اختر تاريخ البدء (اختياري)",
+    selectDueDate: "اختر تاريخ الاستحقاق (اختياري)",
+    estimatedTimePlaceholder: "الوقت المقدر بالدقائق",
+    cancel: "إلغاء",
+    create: "إنشاء المهمة",
+    editTaskTitle: "تعديل المهمة",
+    editTaskDescription: "تحديث تفاصيل مهمتك.",
+    save: "حفظ التغييرات",
+    manageAccount: "إدارة الحساب",
+    manageAccountDescription: "تحديث معلوماتك الشخصية واشتراكك.",
+    premiumAccount: "حساب مميز",
+    freeAccount: "حساب مجاني",
+    enjoyingPremium: "استمتع بجميع الميزات المميزة",
+    upgradeToUnlock: "قم بالترقية لفتح الميزات المميزة",
+    downgrade: "تخفيض",
+    fullName: "الاسم الكامل",
+    email: "البريد الإلكتروني",
+    updateProfile: "تحديث الملف الشخصي",
+    changePassword: "تغيير كلمة المرور",
+    currentPassword: "كلمة المرور الحالية",
+    newPassword: "كلمة المرور الجديدة",
+    confirmPassword: "تأكيد كلمة المرور الجديدة",
+    close: "إغلاق",
+    language: "اللغة",
+    selectLanguage: "اختر اللغة",
+    unlockPremium: "فتح الميزات المميزة",
+    premiumDescription: "احصل على تحليلات متقدمة وأدوات قابلة للتخصيص وتجربة خالية من الإعلانات.",
+    analyticsDashboard: "لوحة التحليلات",
+    customWidgets: "أدوات قابلة للتخصيص",
+    noAds: "بدون إعلانات",
+    upgradeToPremium: "الترقية إلى المميز",
+    premiumPlan: "الخطة المميزة",
+    premiumPlanDescription: "كل ما تحتاجه لإدارة المهام المتقدمة",
+    analyticsFeature: "تتبع إنتاجيتك بمخططات مفصلة ومعدلات إنجاز ورؤى",
+    widgetsFeature: "أنشئ أدوات لوحة تحكم مخصصة لمراقبة ما يهمك أكثر",
+    noAdsFeature: "استمتع بواجهة نظيفة وخالية من الإعلانات",
+    allPremiumFeatures: "جميع الميزات المميزة",
+    advancedAnalytics: "تحليلات وتقارير متقدمة",
+    prioritySupport: "دعم ذو أولوية",
+    exportData: "تصدير البيانات إلى CSV",
+    unlimitedTasks: "مهام وفئات غير محدودة",
+    upgradeToPremiumNow: "الترقية إلى المميز الآن",
+    cancelAnytime: "إلغاء في أي وقت • لا يلزم الالتزام",
+    next: "التالي",
+    back: "رجوع",
+    createWidget: "إنشاء أداة",
+    selectWidgetType: "اختر نوع الأداة",
+    configureWidget: "تكوين الأداة",
+    widgetTitle: "عنوان الأداة",
+    filterByPriority: "تصفية حسب الأولوية",
+    filterByCategory: "تصفية حسب الفئة",
+    filterByStatus: "تصفية حسب الحالة",
+    maxTasksToShow: "الحد الأقصى للمهام",
+    selectTask: "اختر مهمة",
+    noTasksWithDates: "لا توجد مهام بتواريخ",
+    chartType: "نوع المخطط",
+    categoryDistribution: "توزيع الفئات",
+    analyticsTitle: "لوحة التحليلات",
+    analyticsSubtitle: "تتبع إنتاجيتك ومقاييس إنجاز المهام",
+    totalTasks: "إجمالي المهام",
+    completedTasks: "مكتملة",
+    activeTasks: "نشطة",
+    overdueTasks: "متأخرة",
+    allTasksCreated: "جميع المهام المنشأة",
+    completionRate: "معدل الإنجاز",
+    tasksInProgress: "المهام قيد التنفيذ",
+    needsAttention: "يحتاج انتباهاً",
+    taskStatus: "حالة المهام",
+    taskStatusDescription: "توزيع المهام المكتملة مقابل النشطة",
+    priorityDistribution: "توزيع الأولويات",
+    priorityDistributionDescription: "تفصيل المهام حسب مستوى الأولوية",
+    tasksByCategory: "المهام حسب الفئة",
+    tasksByCategoryDescription: "توزيع المهام عبر الفئات",
+    weeklyActivity: "نشاط هذا الأسبوع",
+    weeklyActivityDescription: "المهام المنشأة كل يوم هذا الأسبوع",
+    fourWeekTrend: "اتجاه 4 أسابيع",
+    fourWeekTrendDescription: "إنشاء المهام وإنجازها خلال الأسابيع الأربعة الماضية",
+    activeTasksByPriority: "المهام النشطة حسب الأولوية",
+    activeTasksBreakdown: "تفصيل عبء العمل الحالي",
+    upcomingDeadlines: "المواعيد القادمة",
+    upcomingDeadlinesDescription: "المهام المستحقة خلال 7 أيام",
+    noUpcomingDeadlines: "لا توجد مواعيد قادمة",
+    noTasksAvailable: "لا توجد مهام متاحة",
+    timeSpent: "الوقت المستغرق",
+    start: "بدء",
+    pause: "إيقاف مؤقت",
+    reset: "إعادة تعيين",
+    taskAdded: "تمت إضافة المهمة بنجاح",
+    taskUpdated: "تم تحديث المهمة بنجاح",
+    taskDeleted: "تم حذف المهمة بنجاح",
+    profileUpdated: "تم تحديث الملف الشخصي بنجاح",
+    passwordChanged: "تم تغيير كلمة المرور بنجاح",
+    passwordsDoNotMatch: "كلمات المرور غير متطابقة",
+    passwordTooShort: "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+    welcomeBack: "مرحباً بعودتك!",
+    invalidCredentials: "بريد إلكتروني أو كلمة مرور غير صحيحة",
+    emailAlreadyRegistered: "البريد الإلكتروني مسجل مسبقاً",
+    accountCreated: "تم إنشاء الحساب بنجاح!",
+    loggedOut: "تم تسجيل الخروج بنجاح",
+    upgradedToPremium: "تمت الترقية إلى المميز!",
+    premiumDeactivated: "تم إلغاء تفعيل المميز",
+    loginTitle: "مرحباً بعودتك",
+    loginSubtitle: "سجل الدخول إلى حسابك للمتابعة",
+    registerTitle: "إنشاء حساب",
+    registerSubtitle: "سجل لبدء إدارة مهامك",
+    signIn: "تسجيل الدخول",
+    signUp: "إنشاء حساب",
+    dontHaveAccount: "ليس لديك حساب؟",
+    alreadyHaveAccount: "لديك حساب بالفعل؟",
+  },
 };
 
 export const languageNames: Record<Language, string> = {
@@ -884,4 +897,5 @@ export const languageNames: Record<Language, string> = {
   fr: "Français",
   de: "Deutsch",
   zh: "中文",
+  ar: "العربية",
 };

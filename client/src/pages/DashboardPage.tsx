@@ -10,14 +10,11 @@ import { TaskList } from "../components/task/TaskList";
 import { AddTaskDialog } from "../components/task/AddTaskDialog";
 import { EditTaskDialog } from "../components/task/EditTaskDialog";
 import { ProfileDialog } from "../components/task/ProfileDialog";
-import { WidgetCard } from "../components/widget/WidgetCard";
-import { CreateWidgetDialog } from "../components/widget/CreateWidgetDialog";
 import { ThemeToggle } from "../components/layout/ThemeToggle";
 import { LanguageSelector } from "../components/layout/LanguageSelector";
 
 import { useAuth } from "../context/AuthContext";
 import { useTasks } from "../context/TaskContext";
-import { useWidgets } from "../context/WidgetContext";
 import { useLanguage } from "../context/LanguageContext";
 import { filterTasks, uniqueCategories } from "../lib/taskHelpers";
 import type { Task } from "../types";
@@ -25,23 +22,21 @@ import type { Task } from "../types";
 import { Analytics } from "../components/task/Analytics";
 import { PremiumUpgrade } from "../components/task/PremiumUpgrade";
 
-type View = "tasks" | "analytics" | "widgets";
+type View = "tasks" | "analytics";
 
 export default function DashboardPage() {
   const { user, updateProfile, logout } = useAuth();
   const { tasks, addTask, updateTask, deleteTask, toggleComplete, updateTimer } = useTasks();
-  const { widgets, addWidget, deleteWidget } = useWidgets();
-  const { t } = useLanguage(); // ✅ added
+  const { t } = useLanguage();
 
-  const [activeView, setActiveView]     = useState<View>("tasks");
-  const [searchQuery, setSearchQuery]   = useState("");
+  const [activeView, setActiveView]         = useState<View>("tasks");
+  const [searchQuery, setSearchQuery]       = useState("");
   const [filterPriority, setFilterPriority] = useState("all");
   const [filterCategory, setFilterCategory] = useState("all");
-  const [activeTab, setActiveTab]       = useState("all");
-  const [editingTask, setEditingTask]   = useState<Task | null>(null);
-  const [isAddOpen, setIsAddOpen]       = useState(false);
-  const [isWidgetOpen, setIsWidgetOpen] = useState(false);
-  const [isProfileOpen, setIsProfileOpen] = useState(false);
+  const [activeTab, setActiveTab]           = useState("all");
+  const [editingTask, setEditingTask]       = useState<Task | null>(null);
+  const [isAddOpen, setIsAddOpen]           = useState(false);
+  const [isProfileOpen, setIsProfileOpen]   = useState(false);
 
   if (!user) return null;
 
@@ -78,10 +73,6 @@ export default function DashboardPage() {
             </Button>
             <Button variant={activeView === "analytics" ? "default" : "outline"} onClick={() => setActiveView("analytics")} className="gap-2 relative">
               <BarChart3 className="w-4 h-4" /> {t.analytics}
-              {!user.isPremium && <Crown className="w-3 h-3 text-amber-500 absolute -top-1 -right-1" />}
-            </Button>
-            <Button variant={activeView === "widgets" ? "default" : "outline"} onClick={() => setActiveView("widgets")} className="gap-2 relative">
-              <Layout className="w-4 h-4" /> {t.widgets}
               {!user.isPremium && <Crown className="w-3 h-3 text-amber-500 absolute -top-1 -right-1" />}
             </Button>
             {!user.isPremium && (
@@ -159,38 +150,6 @@ export default function DashboardPage() {
           <Analytics tasks={tasks} isPremium={user.isPremium} onUpgrade={handleUpgrade} />
         )}
 
-        {/* Widgets view */}
-        {activeView === "widgets" && (
-          user.isPremium ? (
-            <>
-              <div className="flex items-center justify-between mb-6">
-                <div>
-                  <h2 className="text-2xl font-bold">{t.widgets}</h2>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">{t.widgetsFeature}</p>
-                </div>
-                <Button onClick={() => setIsWidgetOpen(true)} className="gap-2">
-                  <Plus className="w-4 h-4" /> {t.customWidgets}
-                </Button>
-              </div>
-              {widgets.length === 0 ? (
-                <div className="text-center py-16 bg-white dark:bg-gray-900 rounded-lg border dark:border-gray-800">
-                  <Layout className="w-16 h-16 mx-auto text-gray-400 mb-4" />
-                  <h3 className="text-xl font-semibold mb-2">{t.customWidgets}</h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-md mx-auto">{t.widgetsFeature}</p>
-                  <Button onClick={() => setIsWidgetOpen(true)} className="gap-2"><Plus className="w-4 h-4" /> {t.customWidgets}</Button>
-                </div>
-              ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {widgets.map((w) => (
-                    <WidgetCard key={w.id} widget={w} tasks={tasks} onDelete={deleteWidget} onToggleComplete={toggleComplete} />
-                  ))}
-                </div>
-              )}
-            </>
-          ) : (
-            <PremiumUpgrade onUpgrade={handleUpgrade} />
-          )
-        )}
       </main>
 
       {/* Dialogs */}
@@ -207,7 +166,6 @@ export default function DashboardPage() {
       )}
 
       <ProfileDialog open={isProfileOpen} onOpenChange={setIsProfileOpen} />
-      <CreateWidgetDialog open={isWidgetOpen} onOpenChange={setIsWidgetOpen} onCreate={addWidget} tasks={tasks} categories={categories} />
     </div>
   );
 }
